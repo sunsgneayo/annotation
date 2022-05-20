@@ -1,0 +1,14 @@
+{
+  "name": "sunsgne/annotations",
+  "type": "library",
+  "license": "MIT",
+  "description": "Webman plugin sunsgne/annotations",
+  "require": {
+    "doctrine/annotations": "^1.13"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sunsgne\\Annotations\\": "src"
+    }
+  }
+}
