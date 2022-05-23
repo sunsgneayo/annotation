@@ -2,7 +2,7 @@
 
 use Doctrine\Common\Annotations\AnnotationReader;
 use Webman\Route;
-use Sunsgne\Annotations\Annotations\Mapping\RequestMapping;
+use Sunsgne\Annotations\Mapping\RequestMapping;
 
 /** @var  $routes *已经设置过路由的uri则忽略 */
 $routes = Route::getRoutes();
@@ -66,7 +66,6 @@ foreach ($iterator as $file) {
             continue;
         }
         Route::add([$methodAnnotation->methods], $methodAnnotation->path, [$class_name, $action]);
-
     }
 
 }
