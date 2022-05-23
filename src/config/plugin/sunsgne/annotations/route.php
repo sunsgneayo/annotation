@@ -85,7 +85,7 @@ foreach ($iterator as $file) {
                 $middlewares[] = $objs->middleware[0]['value'] ?? "";
             }
         }
-        Route::add([$methodAnnotation->methods], $methodAnnotation->path, [$class_name, $action])->middleware($middlewares);
+        Route::add($methodAnnotation->methods, $methodAnnotation->path, [$class_name, $action])->middleware($middlewares);
 
     }
 }
