@@ -46,16 +46,6 @@ foreach ($iterator as $file) {
         echo "Class $class_name not found, skip route for it\n";
         continue;
     }
-
-
-    /** 通过反射找到这个类的所有共有方法作为action */
-    $class = new ReflectionClass($class_name);
-    $class_name = $class->name;
-    $methods = $class->getMethods(ReflectionMethod::IS_PUBLIC);
-    $reader = new AnnotationReader();
-    /** @var  $class_annos *注解的读取类 */
-    $class_annos = $reader->getClassAnnotations($class);
-
     if (floatval(PHP_VERSION) > 8)
     {
         $controller = new ReflectionClass($class_name);
@@ -93,7 +83,13 @@ foreach ($iterator as $file) {
     }
 
 
-
+    /** php8.0以下版本==通过反射找到这个类的所有共有方法作为action */
+    $class = new ReflectionClass($class_name);
+    $class_name = $class->name;
+    $methods = $class->getMethods(ReflectionMethod::IS_PUBLIC);
+    $reader = new AnnotationReader();
+    /** @var  $class_annos *注解的读取类 */
+    $class_annos = $reader->getClassAnnotations($class);
     /** @var  $item *设置路由 */
     foreach ($methods as $item) {
         /** @var  $action */
