@@ -47,6 +47,7 @@ foreach ($iterator as $file) {
         continue;
     }
 
+
     /** 通过反射找到这个类的所有共有方法作为action */
     $class = new ReflectionClass($class_name);
     $class_name = $class->name;
@@ -54,6 +55,43 @@ foreach ($iterator as $file) {
     $reader = new AnnotationReader();
     /** @var  $class_annos *注解的读取类 */
     $class_annos = $reader->getClassAnnotations($class);
+
+    if (floatval(PHP_VERSION) > 8)
+    {
+        $controller = new ReflectionClass($class_name);
+        foreach ($controller->getMethods(ReflectionMethod::IS_PUBLIC) as $k => $reflectionMethod) {
+            $middlewares = '';
+            $path        = "";
+            $methods     = "";
+            foreach ($reflectionMethod->getAttributes() as $kk => $attribute) {
+                if ($attribute->getName() === Middleware::class)
+                {
+                    $middlewares = $attribute->getArguments();
+                }
+                if ($attribute->getName() === Middlewares::class)
+                {
+                    $middlewares = $attribute->getArguments();
+                }
+                if ($attribute->getName() === RequestMapping::class)
+                {
+                    $path = $attribute->getArguments()["path"]?? "";
+                    $methods = $attribute->newInstance()->setMethods();
+                }
+            }
+
+            if (!empty($methods) and !empty($path))
+            {
+                if (!empty($middlewares))
+                {
+                    Route::add($methods, $path, [$class_name, $reflectionMethod->name])->middleware($middlewares);
+                }else{
+                    Route::add($methods, $path, [$class_name, $reflectionMethod->name]);
+                }
+            }
+        }
+
+    }
+
 
 
     /** @var  $item *设置路由 */

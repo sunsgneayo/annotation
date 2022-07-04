@@ -13,24 +13,20 @@ use Attribute;
 #[Attribute(Attribute::TARGET_CLASS | Attribute::TARGET_METHOD | Attribute::IS_REPEATABLE)]
 class RequestMapping extends AbstractAnnotation
 {
-    public const GET = 'GET';
 
-    public const POST = 'POST';
 
-    public const PUT = 'PUT';
-
-    public const PATCH = 'PATCH';
-
-    public const DELETE = 'DELETE';
-
-    public const HEADER = 'HEADER';
-
-    public const OPTIONS = 'OPTIONS';
-
+    /** @var array|false|string[]  */
     public $methods;
 
+    /** @var mixed  */
     public $path;
 
+    /** @var array|string[]  */
+    public array $normal = ["GET", "POST", "PUT", "PATCH", "DELETE", "HEADER", "OPTIONS"];
+
+    /**
+     * @param ...$value
+     */
     public function __construct(...$value)
     {
 
@@ -48,5 +44,23 @@ class RequestMapping extends AbstractAnnotation
                 $this->methods = $methods;
             }
         }
+    }
+
+    /**
+     * @return array
+     * @datetime 2022/7/4 13:50
+     * @author zhulianyou
+     */
+    public function setMethods(): array
+    {
+        $normalMethods = [];
+        foreach ($this->methods as $method)
+        {
+            if(in_array($method , $this->normal))
+            {
+                $normalMethods[] = $method;
+            }
+        }
+        return $normalMethods;
     }
 }
