@@ -1,3 +1,21 @@
+<div align="center">
+<img width="260px" src="https://cdn.sunsgne.top/logo.png" alt="workbunny"></div>
+
+**<p align="center">sunsgne/annotations</p>**
+
+**<p align="center">🐬 Webman's shortcut routing based on annotation scheme 🐬</p>**
+
+# Webman's shortcut routing based on annotation scheme
+<div align="center">
+
+[![Latest Stable Version](http://poser.pugx.org/sunsgne/annotations/v)](https://packagist.org/packages/workbunny/webman-nacos)
+[![Total Downloads](http://poser.pugx.org/sunsgne/annotations/downloads)](https://packagist.org/packages/workbunny/webman-nacos)
+[![Latest Unstable Version](http://poser.pugx.org/sunsgne/annotations/v/unstable)](https://packagist.org/packages/workbunny/webman-nacos)
+[![License](http://poser.pugx.org/sunsgne/annotations/license)](https://packagist.org/packages/workbunny/webman-nacos)
+[![PHP Version Require](http://poser.pugx.org/sunsgne/annotations/require/php)](https://packagist.org/packages/workbunny/webman-nacos)
+
+</div>
+
 # webman  annotation 注解
 
 
