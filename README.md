@@ -32,6 +32,7 @@
 composer require sunsgne/annotations
 ```
 ## 使用
+
 ### 路由控制
 - GET
 - POST
@@ -53,6 +54,7 @@ public function json(Request $request)
 }
 ~~~
 ### 路由中间件
+
 在通过注解定义路由时，您仅可通过注解的方式来定义中间件，对中间件的定义有两个注解，分别为：
 > 使用 `@Middleware` 注解时需 `use  Sunsgne\Annotations\Mapping\Middleware;` 命名空间；
 
