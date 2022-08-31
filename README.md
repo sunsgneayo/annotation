@@ -1,7 +1,7 @@
 <div align="center">
-<img width="260px" src="https://cdn.sunsgne.top/logo.png" alt="workbunny"></div>
+<img width="260px" src="https://cdn.sunsgne.top/logo.png" alt="sunsgne"></div>
 
-**<p align="center">sunsgne/annotations</p>**
+**<p align="center">sunsgne/annotation</p>**
 
 **<p align="center">🐬 Webman's shortcut routing based on annotation scheme 🐬</p>**
 
