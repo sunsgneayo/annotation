@@ -1,4 +1,4 @@
-<div align="center" style="border-radius: 50%">
+<div align="center" style="border-radius: 50px">
     <img width="200px"  src="https://cdn.sunsgne.top/logo.png" alt="sunsgne">
 </div>
 
