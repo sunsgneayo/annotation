@@ -16,7 +16,7 @@
 
 </div>
 
-# webman  annotation 注解
+# webman  annotation 注解路由
 
 
 > 使用了 `doctrine/annotations` 包来对代码内的注解进行解析。支持`php8注解方式`
