@@ -1,5 +1,6 @@
-<div align="center">
-<img width="200px" style="border-radius: 50%" src="https://cdn.sunsgne.top/logo.png" alt="sunsgne"></div>
+<div align="center" style="border-radius: 50%">
+    <img width="200px"  src="https://cdn.sunsgne.top/logo.png" alt="sunsgne">
+</div>
 
 **<p align="center">sunsgne/annotation</p>**
 
