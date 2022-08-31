@@ -34,6 +34,7 @@ composer require sunsgne/annotations
 ## 使用
 
 ### 路由控制
+
 - GET
 - POST
 - PUT
@@ -53,6 +54,7 @@ public function json(Request $request)
     return json(['code' => 0, 'msg' => 'ok']);
 }
 ~~~
+
 ### 路由中间件
 
 在通过注解定义路由时，您仅可通过注解的方式来定义中间件，对中间件的定义有两个注解，分别为：
@@ -101,7 +103,9 @@ public function json(Request $request)
     return json(['code' => 0, 'msg' => 'ok']);
 }
 ~~~
+
 ### 支持PHP8.0+版本
+
 ** **
 *注意请勿直接copy。示例中未创建中间件
 1. 定义路由
@@ -132,6 +136,7 @@ public function json(Request $request)
 }
 ~~~
 ### 忽略注解参数
+
 请在`config/plugin/sunsgne/annotations/ignored`文件中添加需要忽略的参数
 ~~~php
 return [
@@ -145,6 +150,7 @@ return [
 ~~~
 
 ### 更新日志
+
 #### 1.1.2 - 2022-07-04
 - 修复注解含有`混杂参数`，导致读取失败的问题
 - 新增配置文件`ignored.php`，用于对注解中的其他参数做忽略读取操作：如`datetime`,`used`等。
