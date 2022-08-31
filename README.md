@@ -1,11 +1,10 @@
 <div align="center">
-<img width="200px" src="https://cdn.sunsgne.top/logo.png" alt="sunsgne"></div>
+<img width="200px" style="border-radius: 50%" src="https://cdn.sunsgne.top/logo.png" alt="sunsgne"></div>
 
 **<p align="center">sunsgne/annotation</p>**
 
 **<p align="center">🐬 Webman's shortcut routing based on annotation scheme 🐬</p>**
 
-# Webman's shortcut routing based on annotation scheme
 <div align="center">
 
 [![Latest Stable Version](http://poser.pugx.org/sunsgne/annotations/v)](https://packagist.org/packages/sunsgne/annotations)
