@@ -7,17 +7,14 @@
 **<p align="center">🐬 Webman's shortcut routing based on annotation scheme 🐬</p>**
 
 <div align="center">
-
 [![Latest Stable Version](http://poser.pugx.org/sunsgne/annotations/v)](https://packagist.org/packages/sunsgne/annotations)
 [![Total Downloads](http://poser.pugx.org/sunsgne/annotations/downloads)](https://packagist.org/packages/sunsgne/annotations)
 [![Latest Unstable Version](http://poser.pugx.org/sunsgne/annotations/v/unstable)](https://packagist.org/packages/sunsgne/annotations)
 [![License](http://poser.pugx.org/sunsgne/annotations/license)](https://packagist.org/packages/sunsgne/annotations)
 [![PHP Version Require](http://poser.pugx.org/sunsgne/annotations/require/php)](https://packagist.org/packages/sunsgne/annotations)
-
 </div>
 
 # webman  annotation 注解路由
-
 
 > 使用了 `doctrine/annotations` 包来对代码内的注解进行解析。支持`php8注解方式`
 >
