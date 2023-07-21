@@ -1,6 +1,6 @@
-<div align="center" style="border-radius: 50px">
-    <img width="260px"  src="https://cdn.nine1120.cn/logo-i.png" alt="sunsgne">
-</div>
+<p align="center">
+  <img width="260px" src="https://cdn.nine1120.cn/logo-i.png" alt="sunsgne">
+</p>
 
 **<p align="center">sunsgne/annotation</p>**
 
