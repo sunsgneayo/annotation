@@ -4,7 +4,7 @@
   "license": "MIT",
   "description": "Webman plugin sunsgne/annotations",
   "require": {
-    "php": ">=7.4",
+    "php": ">=8.0",
     "doctrine/annotations": "^1.13",
     "ext-mbstring": "*"
   },
