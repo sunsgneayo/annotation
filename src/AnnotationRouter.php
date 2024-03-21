@@ -115,6 +115,9 @@ class AnnotationRouter
 
     private static function addLeadingSlashIfNeeded(string $inputString): string
     {
+        if (empty($inputString)){
+            return $inputString;
+        }
         return (!str_starts_with($inputString, '/')) ? '/' . $inputString : $inputString;
     }
 }
