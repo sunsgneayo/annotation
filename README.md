@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="260px" src="http://cdn.nine1120.cn/logo-i.png" alt="sunsgne">
+  <img width="260px" src="http://cdn.qx.1zhihe.cn/image/20250829/b4d39e5c59d846d685fa7a7794e8f42a.png" alt="sunsgne">
 </p>
 
 **<p align="center">sunsgne/annotation</p>**
